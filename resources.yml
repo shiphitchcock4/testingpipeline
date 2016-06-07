@@ -1,12 +1,4 @@
 resources:
-  - name: vtestresource2
-    type: image
-    integration: shiphitchcock1-hub #your account integration
-    source:
-      name: "shiphitchcock1/samplenod"
-      isPull: false
-      tag: latest
-
   - name: vtestresource5
     type: image
     integration: shiphitchcock1-hub #your account integration
@@ -14,11 +6,3 @@ resources:
       name: "shiphitchcock1/testsamplenode"
       isPull: true
       tag: latest
-
-  - name: sampleNodresource
-    type: gitRepo
-    integration: github
-    source:
-      name: "shiphitchcock1/sampleNod" #you should've access to this project (even if it's public)
-      branch: a-version
-      
