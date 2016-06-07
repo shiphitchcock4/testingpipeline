@@ -7,7 +7,7 @@ resources:
       isPull: false
       tag: latest
 
-  - name: busybox
+  - name: vtestresource5
     type: image
     integration: shiphitchcock1-hub #your account integration
     source:
@@ -15,7 +15,7 @@ resources:
       isPull: true
       tag: latest
 
-  - name: samplePyt
+  - name: sampleNodresource
     type: gitRepo
     integration: github
     source:
