@@ -6,20 +6,3 @@ resources:
       name: "shiphitchcock1/testsamplenode"
       isPull: true
       tag: latest
-      
-  - name: vtestresource6
-    type: image
-    integration: shiphitchcock1-hub #your account integration
-    source:
-      name: "shiphitchcock1/sample_python"
-      isPull: true
-      tag: latest
-     
-  - name: vtestresource7
-    type: image
-    integration: shiphitchcock1-hub #your account integration
-    source:
-      name: "shiphitchcock1/samplejav"
-      isPull: false
-      tag: latest 
-  
