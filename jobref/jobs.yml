@@ -4,9 +4,3 @@ jobs:
     steps :
       - GET vtestresource5
       - PUT vtestresource5
-      
-  - name : testjob9
-    type : manifest
-    steps :
-      #- GET vtestresource6
-      - PUT vtestresource6
