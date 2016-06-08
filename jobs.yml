@@ -1,7 +1,0 @@
-jobs:
-  - name : testjob6
-    type : manifest
-    steps :
-      - GET vtestresource5
-      - PUT vtestresource5
- 
