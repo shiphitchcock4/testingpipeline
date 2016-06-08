@@ -9,4 +9,4 @@ jobs:
     type : manifest
     steps :
       - GET vtestresource6
-      - PUT vtestresource6
+      - GET vtestresource6
