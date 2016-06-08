@@ -1,0 +1,6 @@
+jobs:
+  - name : testjob8
+    type : manifest
+    steps :
+      - GET vtestresource5
+      #- PUT vtestresource5
