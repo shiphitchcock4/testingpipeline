@@ -2,5 +2,11 @@ jobs:
   - name : testjob6
     type : manifest
     steps :
-      - GET vtestresource6
+      - GET vtestresource5
       - PUT vtestresource5
+      
+  - name : testjob7
+    type : manifest
+    steps :
+      - GET vtestresource6
+      - PUT vtestresource6
