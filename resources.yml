@@ -35,5 +35,6 @@ resources:
         
   - name: resourcev-replica
     type: replicas
+    integration: cock1-ecscluster
     source:
       count: 1
