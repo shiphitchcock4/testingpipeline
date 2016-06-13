@@ -32,3 +32,8 @@ resources:
       params:
         foo: boo
         api_url: https://api.shippable.com
+        
+  - name: resourcev-replica
+    type: replicas
+    source:
+      count: 1
