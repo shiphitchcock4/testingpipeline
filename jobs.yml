@@ -6,8 +6,8 @@ jobs:
       - GET resourcev-dockeroption
       - GET resourcev-ecsparam
       
-  - name: vjob2-ecsdeploy
-    type: ecsDeploy
-    steps:
-      - GET vjob1-manifest
-      - GET resourcev-ecscluster
+  #- name: vjob2-ecsdeploy
+ #   type: ecsDeploy
+#    steps:
+     # - GET vjob1-manifest
+    #  - GET resourcev-ecscluster
