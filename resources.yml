@@ -1,26 +1,34 @@
 resources:
-  - name: vtestresource5
+  - name: resourcev-image
     type: image
-    integration: shiphitchcock1-hub #your account integration
+    integration: cock1-hub #your subs integration for docker hub
     source:
       name: "shiphitchcock1/testsamplenode"
       isPull: true
       tag: latest
       
-  - name: resourcev-DockerOption
-    type: dockerOptions
+  - name: resourcev-ecscluster
+    type: ecsCluster
+    integration: cock1-ecscluster
     source:
-      memory: 400 # in MB
+      name : "testCL" #name of the cluster we are deploying
+      region: "us-west-2"
+      
+  - name: resourcev-dockeroption
+    type: dockerOptions
+    integration: cock1-ecscluster
+    source:
+      memory: 256 # in MB
       cpu-shares: 0
-      net: "host"
-      volumes: # [host-src:]container-dest[:<options>]
-        - "name:/usr/bin:rw"
-        - "/test/vol:/"
+      portMappings: # format: ip:hostPort:containerPort | ip::containerPort | hostPort:containerPort | containerPort
+        - 80:3000 
+        - 5672:5672
+        - 443:50000
         
-  - name: resourcev-EcsParam #test once more
+  - name: resourcev-ecsparam #test once more
     type: params
+    integration: cock1-ecscluster
     source:
       params:
-        foo: bar
+        foo: boo
         api_url: https://api.shippable.com
-        
