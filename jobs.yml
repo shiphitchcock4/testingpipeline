@@ -3,6 +3,11 @@ jobs:
     type : manifest
     steps :
       - GET: resourcev-image
+      
+      
+  - name : vjob2-manifest
+    type : manifest
+    steps :
       - GET: resourc-image
       
   #- name: vjob2-ecsdeploy
