@@ -8,33 +8,12 @@ resources:
       tag: latest
       
   - name: resourcev-ecscluster
-    type: ecsCluster
-    integration: cock1-ecscluster
+    type: image
+    integration: ship4-docker
     source:
-      name : "testCL" #name of the cluster we are deploying
-      region: "us-west-2"
+      name: "shiphitchcock1/testsamplenode"
+      isPull: false
+      tag: latest
       
-  - name: resourcev-dockeroption
-    type: dockerOptions
-    integration: cock1-ecscluster
-    source:
-      memory: 256 # in MB
-      cpu-shares: 0
-      portMappings: # format: ip:hostPort:containerPort | ip::containerPort | hostPort:containerPort | containerPort
-        - 80:3000 
-        - 5672:5672
-        - 443:50000
+
         
-  - name: resourcev-ecsparam #test once more
-    type: params
-    integration: cock1-ecscluster
-    source:
-      params:
-        foo: boo
-        api_url: https://api.shippable.com
-        
-  - name: resourcev-replica
-    type: replicas
-    integration: cock1-ecscluster
-    source:
-      count: 1
