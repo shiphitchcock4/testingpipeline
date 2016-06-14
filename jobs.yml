@@ -3,9 +3,7 @@ jobs:
     type : manifest
     steps :
       - GET: resourcev-image
-      - GET: resourcev-dockeroption
-      - GET: resourcev-ecsparam
-      - GET: resourcev-replica
+      - GET: resourc-image
       
   #- name: vjob2-ecsdeploy
  #   type: ecsDeploy
