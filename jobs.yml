@@ -2,13 +2,13 @@ jobs:
   - name : vjob1-manifest
     type : manifest
     steps :
-      - GET: resourcev-image
+      - GET: resoenv1
       
       
   - name : vjob2-manifest
     type : manifest
     steps :
-      - GET: resourc-image
+      - GET: resoenv2
       
   #- name: vjob2-ecsdeploy
  #   type: ecsDeploy
