@@ -1,17 +1,17 @@
 resources:
-  - name: resourcev-image
+  - name: resoenv1
     type: image
-    integration: cock1-hub #your subs integration for docker hub
+    integration: ship4-docker #your subs integration for docker hub
     source:
-      name: "shiphitchcock1/testsamplenode"
+      name: "shiphitchcock4/hitchcock4_sample_node"
       isPull: true
       tag: latest
       
-  - name: resourc-image
+  - name: resoenv2
     type: image
     integration: ship4-docker
     source:
-      name: "shiphitchcock1/testsamplenode"
+      name: "shiphitchcock4/hitchcock4_sample_nodeneww"
       isPull: false
       tag: latest
       
