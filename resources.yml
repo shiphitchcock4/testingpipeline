@@ -1,5 +1,5 @@
 resources:
-  - name: resoenv1
+  - name: aa1
     type: image
     integration: ship4-docker #your subs integration for docker hub
     source:
@@ -7,7 +7,7 @@ resources:
       isPull: true
       tag: latest
       
-  - name: resoenv2
+  - name: aa2
     type: image
     integration: ship4-docker
     source:
