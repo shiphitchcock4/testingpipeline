@@ -1,14 +1,14 @@
 jobs:
-  - name : aajob1
-    type : manifest
-    steps :
-      - GET: aa1
+  - name: ghjob1
+    type: manifest
+    steps:
+      - GET: gh2
       
       
-  - name : aajob2
-    type : manifest
-    steps :
-      - GET: aa2
+  - name: ghjob2
+    type: manifest
+    steps:
+      - GET: gh1
       
   #- name: vjob2-ecsdeploy
  #   type: ecsDeploy
