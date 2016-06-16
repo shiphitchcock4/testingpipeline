@@ -2,13 +2,13 @@ jobs:
   - name: ghjob1
     type: manifest
     steps:
-      - GET: gh2
+      - GET: githubreso1
       
       
   - name: ghjob2
     type: manifest
     steps:
-      - GET: gh1
+      - GET: githubreso2
       
   #- name: vjob2-ecsdeploy
  #   type: ecsDeploy
