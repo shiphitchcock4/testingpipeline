@@ -1,5 +1,5 @@
 resources:
-  - name: aa1
+  - name: gh1
     type: image
     integration: ship4-docker #your subs integration for docker hub
     source:
@@ -7,11 +7,11 @@ resources:
       isPull: true
       tag: latest
       
-  - name: aa2
+  - name: gh2
     type: image
     integration: ship4-docker
     source:
-      name: "shiphitchcock4/hitchcock4_sample_nodeneww"
+      name: "shiphitchcock4/hitchcock4_sample_node"
       isPull: false
       tag: latest
       
