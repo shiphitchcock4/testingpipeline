@@ -10,6 +10,11 @@ jobs:
     steps:
       - GET: githubreso2
       
+  - name: ghjob3
+    type: manifest  
+    steps:
+      - GET: githubreso3
+      
   #- name: vjob2-ecsdeploy
  #   type: ecsDeploy
 #    steps:
