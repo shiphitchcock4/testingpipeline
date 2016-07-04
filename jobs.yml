@@ -6,7 +6,7 @@ jobs:
       
       
   - name: ghjob2
-    type: manifest
+    type: manifest  
     steps:
       - GET: githubreso2
       
